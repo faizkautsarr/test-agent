@@ -1,33 +1,25 @@
 {
-  "id": "test-agent",
-  "name": "Test Agent",
-  "version": "1.0.0",
-  "description": "A collection of utility skills for Claude Code",
-  "author": {
-    "name": "Faiz Kautsar",
-    "email": "faiz.kautsar@hubexo.com"
+  "name": "test-agent",
+  "owner": {
+    "name": "faizkautsarr"
   },
-  "license": "MIT",
-  "tags": ["utility", "string", "tools"],
-  "skills": [
+  "plugins": [
     {
       "name": "count",
-      "command": "test-agent:count",
+      "version": "1.0.0",
       "description": "Count the number of characters in a given string",
-      "usage": "/test-agent:count \"<string>\"",
+      "command": "count",
+      "usage": "/count \"<string>\"",
       "examples": [
         {
-          "input": "/test-agent:count \"aaa\"",
+          "input": "/count \"aaa\"",
           "output": "3"
         },
         {
-          "input": "/test-agent:count \"hello world\"",
+          "input": "/count \"hello world\"",
           "output": "11"
         }
       ]
     }
-  ],
-  "repository": "",
-  "homepage": "",
-  "publishedAt": "2026-04-27"
+  ]
 }
