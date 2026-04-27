@@ -4,6 +4,5 @@
   "description": "SDLC agent roles — fe, be, and qa blueprint commands",
   "author": {
     "name": "faizkautsarr"
-  },
-  "skills": "./.claude/skills"
+  }
 }
