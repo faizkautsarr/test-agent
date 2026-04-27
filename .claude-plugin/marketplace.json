@@ -8,7 +8,7 @@
     {
       "name": "test-agent",
       "source": "./",
-      "description": "Utility skills for Claude Code — string utilities and plugin manager",
+      "description": "SDLC agent roles — fe, be, and qa blueprint commands",
       "version": "1.0.0",
       "author": {
         "name": "faizkautsarr"
