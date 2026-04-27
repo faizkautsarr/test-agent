@@ -5,5 +5,5 @@
   "author": {
     "name": "faizkautsarr"
   },
-  "commands": "./.claude/commands"
+  "agents": "./.claude/agents"
 }
