@@ -6,7 +6,7 @@
   },
   "plugins": [
     {
-      "name": "count",
+      "name": "test-agent",
       "source": "./",
       "description": "Utility skills for Claude Code — string utilities and plugin manager",
       "version": "1.0.0",

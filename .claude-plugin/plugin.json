@@ -1,5 +1,5 @@
 {
-  "name": "count",
+  "name": "test-agent",
   "version": "1.0.0",
   "description": "Utility skills for Claude Code — string utilities and plugin manager",
   "author": {
