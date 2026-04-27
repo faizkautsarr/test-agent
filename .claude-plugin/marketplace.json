@@ -6,27 +6,9 @@
   },
   "plugins": [
     {
-      "name": "fe",
-      "source": "./agents/fe",
-      "description": "Front End Engineer agent — preflight, implement, test",
-      "version": "1.0.0",
-      "author": {
-        "name": "faizkautsarr"
-      }
-    },
-    {
-      "name": "be",
-      "source": "./agents/be",
-      "description": "Back End Engineer agent — preflight, implement, test",
-      "version": "1.0.0",
-      "author": {
-        "name": "faizkautsarr"
-      }
-    },
-    {
-      "name": "qa",
-      "source": "./agents/qa",
-      "description": "QA Engineer agent — preflight, implement, test",
+      "name": "test-agent",
+      "source": "./",
+      "description": "SDLC agent roles — fe, be, qa with preflight/implement/test",
       "version": "1.0.0",
       "author": {
         "name": "faizkautsarr"

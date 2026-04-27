@@ -1,0 +1,19 @@
+{
+  "name": "test-agent",
+  "version": "1.0.0",
+  "description": "SDLC agent roles — fe, be, and qa with preflight/implement/test commands",
+  "author": {
+    "name": "faizkautsarr"
+  },
+  "commands": [
+    "./agents/fe/fe-preflight.md",
+    "./agents/fe/fe-implement.md",
+    "./agents/fe/fe-test.md",
+    "./agents/be/be-preflight.md",
+    "./agents/be/be-implement.md",
+    "./agents/be/be-test.md",
+    "./agents/qa/qa-preflight.md",
+    "./agents/qa/qa-implement.md",
+    "./agents/qa/qa-test.md"
+  ]
+}
