@@ -5,5 +5,5 @@
   "author": {
     "name": "faizkautsarr"
   },
-  "agents": "./.claude/agents"
+  "skills": "./.claude/skills"
 }
