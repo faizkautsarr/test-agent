@@ -4,5 +4,6 @@
   "description": "Utility skills for Claude Code — string utilities and plugin manager",
   "author": {
     "name": "faizkautsarr"
-  }
+  },
+  "commands": "./.claude/commands"
 }
