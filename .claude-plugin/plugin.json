@@ -1,16 +1,8 @@
 {
-  "name": "test-agent",
+  "name": "count",
   "version": "1.0.0",
-  "description": "A collection of utility skills for Claude Code",
-  "author": "faiz.kautsar@hubexo.com",
-  "license": "MIT",
-  "skills": [
-    {
-      "name": "count",
-      "description": "Count the number of characters in a given string",
-      "usage": "/test-agent:count \"<string>\"",
-      "example": "/test-agent:count \"aaa\"",
-      "entry": "../skills/count/index.md"
-    }
-  ]
+  "description": "Utility skills for Claude Code — string utilities and plugin manager",
+  "author": {
+    "name": "faizkautsarr"
+  }
 }
