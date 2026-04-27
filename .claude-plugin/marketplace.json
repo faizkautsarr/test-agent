@@ -1,25 +1,21 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "test-agent",
+  "description": "A collection of utility skills for Claude Code",
   "owner": {
-    "name": "faizkautsarr"
+    "name": "faizkautsarr",
+    "email": "faiz.kautsar@hubexo.com"
   },
   "plugins": [
     {
       "name": "count",
-      "version": "1.0.0",
       "description": "Count the number of characters in a given string",
-      "command": "count",
-      "usage": "/count \"<string>\"",
-      "examples": [
-        {
-          "input": "/count \"aaa\"",
-          "output": "3"
-        },
-        {
-          "input": "/count \"hello world\"",
-          "output": "11"
-        }
-      ]
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/faizkautsarr/test-agent.git"
+      },
+      "homepage": "https://github.com/faizkautsarr/test-agent"
     }
   ]
 }
