@@ -8,11 +8,14 @@
     {
       "name": "test-agent",
       "source": "./",
-      "description": "SDLC agent roles — fe, be, qa with preflight/implement/test",
+      "description": "SDLC blueprint — harvester, etl, lm teams",
       "version": "1.0.0",
       "author": {
         "name": "faizkautsarr"
-      }
+      },
+      "homepage": "https://github.com/faizkautsarr/test-agent",
+      "repository": "https://github.com/faizkautsarr/test-agent",
+      "keywords": ["sdlc", "harvester", "etl", "lm", "blueprint"]
     }
   ]
 }

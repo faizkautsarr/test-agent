@@ -1,42 +1,94 @@
 # test-agent
 
-A collection of utility skills for [Claude Code](https://claude.ai/code).
+SDLC blueprint plugin for [Claude Code](https://claude.ai/code) — provides slash commands for **harvester**, **etl**, and **lm** teams.
 
-## Install
+## Commands
 
-Run this in your project directory:
+15 slash commands, all under the `/test-agent:` namespace.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/faizkautsarr/test-agent/main/install.sh | bash
+### Harvester team (3)
+```
+/test-agent:harvester-preflight
+/test-agent:harvester-implement
+/test-agent:harvester-test
 ```
 
-Or manually copy any skill file from `.claude/commands/` into your project's `.claude/commands/` folder.
-
-## Skills
-
-### `/count`
-
-Returns the number of characters in a string.
-
+### ETL team (3)
 ```
-/count "aaa"
-→ 3
-
-/count "hello world"
-→ 11
+/test-agent:etl-preflight
+/test-agent:etl-implement
+/test-agent:etl-test
 ```
 
-## Structure
+### LM team (9 — has fe/be/qa roles)
+```
+/test-agent:lm-fe-preflight    /test-agent:lm-be-preflight    /test-agent:lm-qa-preflight
+/test-agent:lm-fe-implement    /test-agent:lm-be-implement    /test-agent:lm-qa-implement
+/test-agent:lm-fe-test         /test-agent:lm-be-test         /test-agent:lm-qa-test
+```
+
+## Install — production (from GitHub)
+
+In any project, run these two commands inside Claude Code:
 
 ```
-.claude/commands/     # Skill files (Claude Code slash commands)
-skills/               # Skill source and documentation
-.claude-plugin/       # Plugin and marketplace metadata
-install.sh            # One-line installer
+/plugin marketplace add faizkautsarr/test-agent
+/plugin install test-agent@test-agent
+```
+
+That's it — all 15 commands become available.
+
+## Install — local development (from a cloned repo)
+
+If you're hacking on this plugin and want to test changes without pushing:
+
+```
+/plugin marketplace add /absolute/path/to/test-agent
+/plugin install test-agent@test-agent
+/reload-plugins
+```
+
+After editing any command file, re-run `/reload-plugins` to pick up changes.
+
+## Usage
+
+Invoke any command with optional arguments:
+
+```
+/test-agent:harvester-preflight "deploy v2"
+/test-agent:lm-fe-implement "build login form"
+/test-agent:etl-test
+```
+
+Each command's behavior is defined in its corresponding `.md` file under `teams/`.
+
+## Repository structure
+
+```
+test-agent/
+├── .claude-plugin/
+│   ├── plugin.json          # registers all 15 commands
+│   └── marketplace.json     # marketplace listing
+├── README.md
+└── teams/
+    ├── harvester/           # 3 commands (no roles)
+    ├── etl/                 # 3 commands (no roles)
+    └── lm/                  # 9 commands across fe/be/qa roles
+        ├── fe/
+        ├── be/
+        └── qa/
+```
+
+Folder layout is purely for organization — Claude Code reads commands from the explicit `commands` array in `plugin.json`, not from the folder structure.
+
+## Updating the plugin
+
+After pushing changes to GitHub, users can update with:
+
+```
+/plugin marketplace update test-agent
 ```
 
 ## Author
 
 Faiz Kautsar — faiz.kautsar@hubexo.com
-# test-agent
-# test-agent

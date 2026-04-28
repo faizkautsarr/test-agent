@@ -1,19 +1,25 @@
 {
   "name": "test-agent",
   "version": "1.0.0",
-  "description": "SDLC agent roles — fe, be, and qa with preflight/implement/test commands",
+  "description": "SDLC blueprint — harvester, etl, lm teams",
   "author": {
     "name": "faizkautsarr"
   },
   "commands": [
-    "./agents/fe/fe-preflight.md",
-    "./agents/fe/fe-implement.md",
-    "./agents/fe/fe-test.md",
-    "./agents/be/be-preflight.md",
-    "./agents/be/be-implement.md",
-    "./agents/be/be-test.md",
-    "./agents/qa/qa-preflight.md",
-    "./agents/qa/qa-implement.md",
-    "./agents/qa/qa-test.md"
+    "./teams/harvester/harvester-preflight.md",
+    "./teams/harvester/harvester-implement.md",
+    "./teams/harvester/harvester-test.md",
+    "./teams/etl/etl-preflight.md",
+    "./teams/etl/etl-implement.md",
+    "./teams/etl/etl-test.md",
+    "./teams/lm/fe/lm-fe-preflight.md",
+    "./teams/lm/fe/lm-fe-implement.md",
+    "./teams/lm/fe/lm-fe-test.md",
+    "./teams/lm/be/lm-be-preflight.md",
+    "./teams/lm/be/lm-be-implement.md",
+    "./teams/lm/be/lm-be-test.md",
+    "./teams/lm/qa/lm-qa-preflight.md",
+    "./teams/lm/qa/lm-qa-implement.md",
+    "./teams/lm/qa/lm-qa-test.md"
   ]
 }
