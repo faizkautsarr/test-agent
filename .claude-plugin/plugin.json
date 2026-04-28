@@ -6,20 +6,20 @@
     "name": "faizkautsarr"
   },
   "commands": [
-    "./teams/harvester/harvester-preflight.md",
-    "./teams/harvester/harvester-implement.md",
-    "./teams/harvester/harvester-test.md",
-    "./teams/etl/etl-preflight.md",
-    "./teams/etl/etl-implement.md",
-    "./teams/etl/etl-test.md",
-    "./teams/lm/fe/lm-fe-preflight.md",
-    "./teams/lm/fe/lm-fe-implement.md",
-    "./teams/lm/fe/lm-fe-test.md",
-    "./teams/lm/be/lm-be-preflight.md",
-    "./teams/lm/be/lm-be-implement.md",
-    "./teams/lm/be/lm-be-test.md",
-    "./teams/lm/qa/lm-qa-preflight.md",
-    "./teams/lm/qa/lm-qa-implement.md",
-    "./teams/lm/qa/lm-qa-test.md"
+    "./agents/harvester/harvester-preflight.md",
+    "./agents/harvester/harvester-implement.md",
+    "./agents/harvester/harvester-test.md",
+    "./agents/etl/etl-preflight.md",
+    "./agents/etl/etl-implement.md",
+    "./agents/etl/etl-test.md",
+    "./agents/lm/fe/lm-fe-preflight.md",
+    "./agents/lm/fe/lm-fe-implement.md",
+    "./agents/lm/fe/lm-fe-test.md",
+    "./agents/lm/be/lm-be-preflight.md",
+    "./agents/lm/be/lm-be-implement.md",
+    "./agents/lm/be/lm-be-test.md",
+    "./agents/lm/qa/lm-qa-preflight.md",
+    "./agents/lm/qa/lm-qa-implement.md",
+    "./agents/lm/qa/lm-qa-test.md"
   ]
 }

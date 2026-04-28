@@ -60,7 +60,7 @@ Invoke any command with optional arguments:
 /test-agent:etl-test
 ```
 
-Each command's behavior is defined in its corresponding `.md` file under `teams/`.
+Each command's behavior is defined in its corresponding `.md` file under `agents/`.
 
 ## Repository structure
 
@@ -70,7 +70,7 @@ test-agent/
 │   ├── plugin.json          # registers all 15 commands
 │   └── marketplace.json     # marketplace listing
 ├── README.md
-└── teams/
+└── agents/
     ├── harvester/           # 3 commands (no roles)
     ├── etl/                 # 3 commands (no roles)
     └── lm/                  # 9 commands across fe/be/qa roles
